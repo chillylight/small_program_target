@@ -1,0 +1,41 @@
+/* pages/target/target.wxss */
+.list-item{
+	height: 50rpx;
+	text-align: left;
+	font-size: 36rpx;
+	border-bottom: 1px solid #eee;
+	padding: 20rpx 30rpx;
+	position: relative;
+}
+.devide{
+	height: 50rpx;
+	width: 100%;
+	background: #eff3f9;
+	padding-left: 30rpx;
+	line-height: 50rpx;
+	color: #999;
+	font-size: 24rpx;
+}
+.list-item.already{
+	height: 50rpx;
+	text-align: left;
+	font-size: 36rpx;
+	border-bottom: 1px solid #eee;
+	padding: 20rpx 30rpx;
+	position: relative;
+	opacity:0.4;
+}
+
+.points{
+	position: absolute;
+	right: 40rpx;
+	font-size: 28rpx;
+	color:#999;
+	top: 26rpx;
+}
+.points2{
+	font-size: 34rpx;
+}
+.add{
+  background: #f0ad4e;
+}

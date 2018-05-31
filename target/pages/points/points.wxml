@@ -1,0 +1,11 @@
+<!--pages/points/points.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <block>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+
+      <text class='score'>总积分：{{ allScore }}</text>
+    </block>
+  </view>
+</view>

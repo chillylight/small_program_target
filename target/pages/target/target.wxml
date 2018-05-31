@@ -1,0 +1,36 @@
+<!--pages/target/target.wxml-->
+<view bindtap="hideAdd" class='list-box'>
+    <view class="devide" hidden='{{!isShowDevide}}'>今天</view>
+
+    <block wx:for="{{targetList}}" wx:key="ids" wx:for-item="lists">
+    	<view class="list-item" wx:if="{{lists.checked == false}}">
+    		<checkbox checked="{{lists.checked}}" data-id="{{lists.id}}" data-points="{{lists.points}}" data-checked="{{lists.checked}}" bindtap="changeCheck" class='check-box' />
+    		<text data-id="{{ lists.id }}" bindtap="toDetailPage" class='text-name'>{{lists.name}}</text>
+        <text class="points" wx:if="{{lists.points !=''}}" data-id="{{ lists.id }}" bindtap="toDetailPage">-{{lists.points}}分</text>
+        <text wx:else class="points points2 iconfont icon-ICONbiaozhun_fuzhi-" data-id="{{ lists.id }}" bindtap="toDetailPage"></text>
+    	</view>
+    </block>
+    
+    <view class="devide">已完成</view>
+
+    <block wx:for="{{targetList}}" wx:key="ids" wx:for-item="lists">
+      <view class="list-item already" wx:if="{{lists.checked == true}}">
+        <checkbox checked="{{lists.checked}}" data-id="{{lists.id}}" data-points="{{lists.points}}" data-checked="{{lists.checked}}" bindtap="cancelCheck" class='check-box' />
+        <text data-id="{{ lists.id }}" bindtap="toDetailPage" class='text-name'>{{lists.name}}</text>
+        <text class="points" wx:if="{{lists.points !=''}}" data-id="{{ lists.id }}" bindtap="toDetailPage">-{{lists.points}}分</text>
+        <text wx:else class="points points2 iconfont icon-ICONbiaozhun_fuzhi-" data-id="{{ lists.id }}" bindtap="toDetailPage"></text>
+      </view>
+    </block>
+</view>
+
+<!-- 添加按钮 -->
+<view class='add' bindtap="addTap">
+    <text class='add-text'>+</text>
+</view>
+
+<!-- 添加任务输入框 -->
+<view class='add-detail' hidden="{{!isShowAdd}}">
+   <input placeholder='你有什么愿望?' value="{{todoValue}}" focus="false" adjust-position="true" cursor-spacing="18" bindinput="todo" confirm-type="完成" confirm-hold="false"></input>
+   <image src='../images/arrow.png' class='arrow-next' mode='widthFix' hidden="{{selectImg}}"></image>
+   <image src='../images/arrow_select.png' class='arrow-next' mode='widthFix' bindtap="submitTodo" hidden="{{!selectImg}}"></image>
+</view>

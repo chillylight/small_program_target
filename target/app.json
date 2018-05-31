@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/target/target",
+    "pages/points/points",
+    "pages/itemDetail/itemDetail",
+    "pages/targetDetail/targetDetail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#4A90E2",
+    "navigationBarTitleText": "立个目标",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh":true
+  },
+  "tabBar": {
+    "position":"top",
+    "selectedColor":"#4A90E2",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "任务库"
+      },
+      {
+        "pagePath": "pages/target/target",
+        "text": "愿望库"
+      },
+      {
+        "pagePath": "pages/points/points",
+        "text": "积分库"
+      }
+    ]
+  },
+  "networkTimeout":{
+    "request": 10000
+  },
+  "debug": false
+}

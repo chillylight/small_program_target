@@ -1,0 +1,89 @@
+/**app.wxss**/
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1525573698627'); /* IE9*/
+  src: url('iconfont.eot?t=1525573698627#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff;charset=utf-8;base64,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') format('woff'),
+  url('iconfont.ttf?t=1525573698627') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1525573698627#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-shanchu:before { content: "\e78d"; }
+.icon-ICONbiaozhun_fuzhi-:before { content: "\e61f"; }
+/* 字体图标库结束 */
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.add{
+  position: fixed;
+  right: 40rpx;
+  bottom: 60rpx;
+  width: 100rpx;
+  height: 100rpx;
+  box-shadow: #666 0 4rpx 16rpx;
+  background: #5295E3;
+  text-align: center;
+  border-radius: 50%;
+  vertical-align: middle;
+  z-index: 99;
+}
+.add-text{
+  color: #fff;
+  font-size: 80rpx;
+  font-weight: 300;
+  line-height: 90rpx;
+}
+.add-detail{
+  display: block;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 100;
+  background: #fff;
+  bottom: 0px;
+  border-top: 1px solid #eee;
+  box-shadow: #ccc 0px -1px 10px;
+  width:100%;
+  font-size: 28rpx;
+  height: 100rpx;
+}
+.add-detail input{
+  padding: 20rpx;
+  padding-right: 100rpx;
+}
+.arrow-next{
+  width: 60rpx;
+  position: absolute;
+  right: 10rpx;
+  z-index: 10;
+  bottom: 26rpx;
+  transform: rotateY(180deg);
+}
+.list-box{
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+.check-box{
+  position: absolute;
+  top: 16rpx;
+}
+.text-name{
+  width: 560rpx;
+  margin-left: 60rpx;
+  white-space:nowrap;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

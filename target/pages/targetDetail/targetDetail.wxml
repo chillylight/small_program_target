@@ -1,0 +1,21 @@
+<!--pages/targetDetail/targetDetail.wxml-->
+<view>
+	<view class="input-box">
+		<text>任务名:</text>
+		<input type="text" value="{{msg.name}}" bindinput="name" auto-focus/>
+	</view>
+	<view class="input-box">
+		<text>积分:</text>
+		<input type="number" bindinput="points" value="{{msg.points}}" />
+	</view>
+	<!-- <view class="input-box">
+		<text>周期:</text>
+		<input type="text" value="{{}}"/>
+	</view> -->
+	<view class="input-box">
+		<text>详情:</text>
+		<input type="text" bindinput="details" value="{{msg.detail}}"/>
+	</view>
+	
+	<view class="delete iconfont icon-shanchu" bindtap='delete'></view>
+</view>
